@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="list">
+    <h1>Checklist</h1>
+    <br>
+    <div class="border">
+      <input (keyup.enter)="addNote()" class="add" [(ngModel)]="titleInput" type="text">
+      <button (click)="addNote()"><img src="../../assets/image/plus.png"></button>
+    </div>
+
+    <mat-list *ngFor="let note of notes; let i = index">
+
+      <mat-list-item>
+        <div class="item">
+          <input #checkbox type="checkbox" [(ngModel)]="note.done">
+
+          <p [class.done]="note.done">
+            {{note.title}}
+          </p>
+
+          <button class="edit-button" (click)="editNote(note, i)">
+            {{note.editMode ? 'Salvar' : 'Editar'}}</button>
+          <input class="edit-input" type="text" *ngIf="note.editMode" [(ngModel)]="newInput">
+          <img class="icon" src="../../assets/image/trash.png" (click)="deleteNote(i)">
+        </div>
+      </mat-list-item>
+    </mat-list>
+
+  </div>

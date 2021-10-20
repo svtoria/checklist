@@ -1,0 +1,115 @@
+.container {
+  font-family: 'regular';
+  height: 500px;
+  background-color: rgb(78, 78, 78);
+  padding-top: 4%;
+
+  .list {
+    background-color: #000000;
+    padding: 24px;
+    border-radius: 7px;
+    width: 450px;
+    margin: auto;
+    color: #ffffff;
+
+    .item {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #808080;
+      justify-content: space-between;
+      height: 20px;
+    }
+
+    mat-list {
+      padding: 5px;
+      height: 40px;
+    }
+
+    mat-list-item {
+      list-style: none;
+      flex-direction: row;
+      height: 40px;
+    }
+
+    .done {
+      text-decoration: line-through;
+    }
+
+    .align-icons {
+      position: absolute;
+      right: 260px;
+    }
+
+    .icon {
+      width: 21px;
+      height: 21px;
+      filter: grayscale(100%);
+    }
+
+    h1 {
+      margin: 15px 150px;
+    }
+
+    .border {
+      border-radius: 3px;
+      border: 1px solid #ffffff;
+      background-color: #000000;
+      display: flex;
+      flex-direction: row;
+      width: 99%;
+      justify-content: space-between;
+    }
+
+    .add {
+      background: none;
+      border: none;
+      height: 2rem;
+      color: #ffffff;
+      margin-left: 1px;
+      margin-top: 1px;
+      width: 90%;
+    }
+
+    button {
+      border: none;
+      padding: 6px;
+      margin-right: 0%;
+
+      img {
+        width: 50%;
+      }
+
+    }
+
+    p {
+      margin-top: 1%;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      cursor: pointer;
+      filter: saturate(100%);
+      filter: contrast(5);
+    }
+
+    .edit-input {
+      border-radius: 3px;
+      border: 1px solid #ffffff;
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .edit-button {
+      height: 20px;
+      font-size: 0.8rem;
+      padding: 4px;
+      border-radius: 3px;
+    }
+  }
+
+}
